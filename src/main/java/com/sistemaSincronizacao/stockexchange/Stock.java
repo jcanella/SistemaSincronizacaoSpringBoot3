@@ -1,10 +1,14 @@
 package com.sistemaSincronizacao.stockexchange;
 
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
+
 public class Stock {
     private String name;
     private int quantity;
     private double currentPrice;
     private long id;
+    private String horaAtual;
 
 
 
@@ -13,6 +17,14 @@ public class Stock {
         this.name = name;
         this.quantity = quantity;
         this.currentPrice = currentPrice;
+    }
+
+    public String getHoraAtual() {
+        return horaAtual;
+    }
+
+    public void setHoraAtual(String horaAtual) {
+        this.horaAtual = horaAtual;
     }
 
     public long getId() {
